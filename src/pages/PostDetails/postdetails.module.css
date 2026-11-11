@@ -1,0 +1,180 @@
+.comSec {
+    margin-top: 40px;
+    max-width: 850px;
+    width: 100%;
+}
+
+.ComTitle{
+    font-size: 24px;
+    font-weight: 700px;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.comList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comCard{
+    background-color: #ffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.comCard:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.comHead{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.comHead h3{
+    font-size: 16px;
+    font-weight: 600;
+    color:#1e293b;
+    margin: 0;
+}
+
+.comHead span{
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+.comBody{
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0;
+}
+
+.postCard{
+    max-width: 850px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+
+.postTitle{
+    font-size: 26px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.postBody{
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+.deleteBtn{
+    background-color: #ef4444;
+    color:white;
+    padding: 10px 18px;
+    border:none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+
+.deleteBtn:hover{
+    background-color: #dc2628;
+}
+
+.editBtn{
+    background-color: 2563eb;
+    color:white;
+    padding: 10px 18px;
+    border:none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: poiner;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.editBtn:hover{
+    background-color: 1d4ed8;
+}
+
+.editOverlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.65);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+}
+
+.overlayContent{
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0, 0.2);
+    animation : modalAppear 0.2s ease;
+}
+
+.overlayContent input,
+.overlayContent textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+}
+
+
+.overlayContent textarea:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0,12);
+}
+.overlayContent input:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0,12);
+}
+
+.overlayContent textarea{
+    min-height: 140px;
+    resize: none;
+}
+
+
+@keyframes modalAppear{
+    from{
+        opacity: 0;
+        transform: translateY(15px) scale(0.5);
+    }
+    to{ 
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

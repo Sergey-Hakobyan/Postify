@@ -1,0 +1,72 @@
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.header h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.createBtn{
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+
+.createBtn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.postsList {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.postCard {
+    display: block;
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.postCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+    border-color: #bfdbfe;
+}
+
+.postTitle {
+    font-size: 19px;
+    color: #1e293b;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+.postBody {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
